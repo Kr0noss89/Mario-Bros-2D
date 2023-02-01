@@ -25,7 +25,9 @@ public class Camara : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        //Posicion deseada de la camara
+        if(target != null)
+        {
+            //Posicion deseada de la camara
         Vector3 desiredPosition = target.position + offset;
 
         float clampX = Mathf.Clamp(desiredPosition.x, limitX.x , limitX.y);
@@ -37,5 +39,6 @@ public class Camara : MonoBehaviour
         Vector3 lerpedPosition = Vector3.Lerp(transform.position, clampedPosition, interpolationRatio);
 
         transform.position = lerpedPosition;
+        }
     }
 }
