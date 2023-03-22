@@ -2,27 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControler : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     int playerHealth = 3;
-
     public float playerSpeed = 5.5f;
-
     public float jumpForce = 3f;
 
     string texto = "Hello World";
 
     private SpriteRenderer spriteRenderer;
-
     private Rigidbody2D rBody;
-
     private GroundSensor sensor;
-
     public Animator anim;
 
     float horizontal;
 
- 
+    GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +26,10 @@ public class PlayerControler : MonoBehaviour
         rBody = GetComponent<Rigidbody2D>();
         sensor = GameObject.Find("GroundSensor").GetComponent<GroundSensor>();
         anim = GetComponent<Animator>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        SFXManager
+
+
         playerHealth = 10;
         Debug.Log(texto);
     }
@@ -38,9 +37,11 @@ public class PlayerControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxis("Horizontal");
+        if(gameManager.isGameOver == false)
+        {
+          horizontal = Input.GetAxis("Horizontal");
 
-        //transform.position += new Vector3(horizontal,0,0) * playerSpeed * Time.deltaTime; 
+        //transform.position += new Vector3(horizontal, 0, 0) * playerSpeed * Time.deltaTime; 
 
         if(horizontal < 0)
         {
@@ -56,15 +57,28 @@ public class PlayerControler : MonoBehaviour
         {
             anim.SetBool("IsRunning", false);
         }
+
         if(Input.GetButtonDown("Jump") && sensor.isGrounded)
         {
             rBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            anim.SetBool("IsJumping" , true);
+            anim.SetBool("IsJumpinng", true);
         }
+        }
+       
     }
 
-     void FixedUpdate()
+    void FixedUpdate()
     {
-        rBody.velocity = new Vector2(horizontal * playerSpeed, rBody.velocity.y);        
+        rBody.velocity = new Vector2(horizontal * playerSpeed, rBody.velocity.y);
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if(collider.gameObject.tag == "coin")
+        {
+            gameManager.Addcoin();
+            sfxManager.CoinSound();
+            Destroy(collider.gameObject);
+        }
     }
 }
