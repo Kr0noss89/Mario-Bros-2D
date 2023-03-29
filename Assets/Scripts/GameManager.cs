@@ -8,18 +8,21 @@ public class GameManager : MonoBehaviour
 
     public bool isGameOver;
 
-    // Start is called before the first frame update
-    void Start()
+    public bool canShoot;
+
+    public float powerUpDuration = 5;
+
+    public float powerUpTimer = 0;
+
+    public Text coinText;
+    
+    int coins;
+
+
+    void update()
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 
     void GameOver()
     {
@@ -46,6 +49,28 @@ public class GameManager : MonoBehaviour
        yield return new WaitForSeconds(2.5f);
 
        SceneManager.LoadScene(0);    
+   }
+
+   public void AddCoin()
+   {
+         coins++;
+         coinText.text = coins.ToString();
+   }
+
+   void ShootPowerUp()
+   {
+    if(canShoot)
+    {
+        if(powerUpTimer <= powerUpDuration)
+        {
+            powerUpTimer += Time.deltaTime;
+        }
+        else
+        {
+            canShoot = false;
+            powerUpTimer = 0;
+        }
+    }
    }
 }
 
