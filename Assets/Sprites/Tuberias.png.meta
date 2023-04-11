@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fe054d151b5c51f47b33916f3ec81455
+guid: 7610f958bd5e6c04eb442798c957911b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -100,6 +100,30 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -118,8 +142,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf38a9a018914d24bba1e3133a6db9de
-      internalID: -1952480247
+      spriteID: 4f348f0ee3461fe41b7af6bca66db765
+      internalID: -1574145235
       vertices: []
       indices: 
       edges: []
@@ -129,9 +153,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 43
-        y: 72
+        y: 73
         width: 28
-        height: 18
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,8 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4c7fe3f0ca048b479405eea461a73f5
-      internalID: 715712980
+      spriteID: e29e7613f616e324184aa0cea4ef5fb4
+      internalID: 1816399070
       vertices: []
       indices: 
       edges: []
@@ -149,19 +173,19 @@ TextureImporter:
       name: Tuberias_2
       rect:
         serializedVersion: 2
-        x: 36
+        x: 0
         y: 37
-        width: 36
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a09b3427db928b43b3d56524ef8bdd9
-      internalID: -1221556275
+      spriteID: f4df8ca2333ebc24aa7af234bbc5ab59
+      internalID: 1730435625
       vertices: []
       indices: 
       edges: []
@@ -170,19 +194,19 @@ TextureImporter:
       name: Tuberias_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 37
         y: 37
-        width: 33
+        width: 34
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 879147fe0da6eb04aa8ddd29cb091b53
-      internalID: -2117972954
+      spriteID: 1e25f57a5dfcf1d4d9e1cb1b9dfa5dc5
+      internalID: -957230120
       vertices: []
       indices: 
       edges: []
@@ -202,8 +226,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7514c728a93ef9e4fa7e53cc1106f94b
-      internalID: 1266391675
+      spriteID: 4bc3f58268660dd4b9acfd520842a947
+      internalID: -592080083
       vertices: []
       indices: 
       edges: []
@@ -219,11 +243,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tuberias_0: -1952480247
-      Tuberias_3: -2117972954
-      Tuberias_1: 715712980
-      Tuberias_4: 1266391675
-      Tuberias_2: -1221556275
+      Tuberias_0: -1574145235
+      Tuberias_3: -957230120
+      Tuberias_1: 1816399070
+      Tuberias_4: -592080083
+      Tuberias_2: 1730435625
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

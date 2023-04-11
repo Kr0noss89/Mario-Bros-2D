@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6259752156d02fc47aae24a503a4ab17
+guid: 717a153c54a245c41b54adc57609cfaf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -100,6 +100,30 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -109,7 +133,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 33
+        width: 32
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -118,8 +142,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b233ae846ec90ac49ab20d120d6e43b6
-      internalID: 916688956
+      spriteID: ff8496f570ce1d9418ec2aa03bce9539
+      internalID: -743266286
       vertices: []
       indices: 
       edges: []
@@ -139,8 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40baa26e8b534f749bfdc9b525d6e8ec
-      internalID: -1560076109
+      spriteID: f49ab01bb8af45647bf4f2f03da9e2d0
+      internalID: -1866893056
       vertices: []
       indices: 
       edges: []
@@ -160,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20b437f37d0210c458773e3f27116ee2
-      internalID: -1816181234
+      spriteID: 6d607d75d5477734fafba39170d1a42e
+      internalID: -971547409
       vertices: []
       indices: 
       edges: []
@@ -177,9 +201,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Hierbas_0: 916688956
-      Hierbas_2: -1816181234
-      Hierbas_1: -1560076109
+      Hierbas_0: -743266286
+      Hierbas_2: -971547409
+      Hierbas_1: -1866893056
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

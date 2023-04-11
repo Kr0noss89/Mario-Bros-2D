@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 992d9b03ffa3e4d4d882271b0f57b252
+guid: f70c7dd4ed4ba2d43bb2041cace20e67
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -100,6 +100,30 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -118,8 +142,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a34eb355dd590964ab242785bcd4b49f
-      internalID: 1596328398
+      spriteID: 3e61cd356af196644a013698ff49ffec
+      internalID: -2019909878
       vertices: []
       indices: 
       edges: []
@@ -139,8 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 883247fa0fc4f95428479cd3ebb45389
-      internalID: 1418064332
+      spriteID: 650fefd7e1fb3964495a5864b7077157
+      internalID: 1160181951
       vertices: []
       indices: 
       edges: []
@@ -160,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50480d8d62af3b045977d67047fa0a15
-      internalID: -1646383454
+      spriteID: 122680b0a4f1e0844a2cee8f71628525
+      internalID: -199837436
       vertices: []
       indices: 
       edges: []
@@ -181,8 +205,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c824fafb6791d6347832f08c691baea9
-      internalID: 1385248183
+      spriteID: ca0ff07ebd83bfb4e976bec32f8c67cf
+      internalID: 898873235
       vertices: []
       indices: 
       edges: []
@@ -202,8 +226,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8366e64dfb47994e871b5cbab380659
-      internalID: -1260800393
+      spriteID: 4161cf8414f1fc744baabddaa3b44ae0
+      internalID: 241668235
       vertices: []
       indices: 
       edges: []
@@ -223,8 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 896bce94538e00442b1e22c014d93cde
-      internalID: -1998083426
+      spriteID: 0b647ea02cceaa247a5ae0cd05940bd9
+      internalID: 1243940505
       vertices: []
       indices: 
       edges: []
@@ -244,8 +268,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4212e4358fd7c140a2b3d971cf6ec05
-      internalID: 1146326231
+      spriteID: a878ba58789bb784ba6feb256c065679
+      internalID: -100218332
       vertices: []
       indices: 
       edges: []
@@ -265,8 +289,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dccc1a39c055cf34c8c0e7af9be56eae
-      internalID: 1334967792
+      spriteID: 51fbe606115064b46a477ca8bfec1bb6
+      internalID: 1269859349
       vertices: []
       indices: 
       edges: []
@@ -286,8 +310,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 649cecea74bbb37448f175e7eb7a603f
-      internalID: 931581507
+      spriteID: a3345fae6e34db04c881a629ea9245bb
+      internalID: 1391931718
       vertices: []
       indices: 
       edges: []
@@ -303,15 +327,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Coins2_3: 1385248183
-      Coins2_0: 1596328398
-      Coins2_6: 1146326231
-      Coins2_7: 1334967792
-      Coins2_5: -1998083426
-      Coins2_4: -1260800393
-      Coins2_8: 931581507
-      Coins2_2: -1646383454
-      Coins2_1: 1418064332
+      Coins2_3: 898873235
+      Coins2_0: -2019909878
+      Coins2_6: -100218332
+      Coins2_7: 1269859349
+      Coins2_5: 1243940505
+      Coins2_4: 241668235
+      Coins2_8: 1391931718
+      Coins2_2: -199837436
+      Coins2_1: 1160181951
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

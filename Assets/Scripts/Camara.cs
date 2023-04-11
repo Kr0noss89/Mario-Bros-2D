@@ -11,14 +11,16 @@ public class Camara : MonoBehaviour
     public Vector2 limitX;
     public Vector2 limitY;
 
-
+    
     public float interpolationRatio;
+
+    GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
         target = GameObject.Find("Mario").GetComponent<Transform>();
-        gamManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame

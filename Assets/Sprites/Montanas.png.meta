@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 814d04b2ede5b6f4f8078bd57d1536fc
+guid: 5552ac1ec11da4542983439cff066f29
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -100,6 +100,30 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -118,8 +142,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bcf1c4e55d30b74ea5fd92dd7a94550
-      internalID: -400859717
+      spriteID: e19348f486a82334ab9393e03d271427
+      internalID: 1340227439
       vertices: []
       indices: 
       edges: []
@@ -130,7 +154,7 @@ TextureImporter:
         serializedVersion: 2
         x: 51
         y: 0
-        width: 77
+        width: 80
         height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -139,8 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05a8fff0df447364cbc05a69e27937ec
-      internalID: -1076966369
+      spriteID: 3517b47f79d9c16458d0dfbd28ffb5af
+      internalID: 1156094691
       vertices: []
       indices: 
       edges: []
@@ -156,8 +180,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Montanas_1: -1076966369
-      Montanas_0: -400859717
+      Montanas_1: 1156094691
+      Montanas_0: 1340227439
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

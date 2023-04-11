@@ -3,41 +3,56 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
-
 {
-      int playerHealth = 3;
+    //Variable para la cantidad de vidas de Mario
+    int playerHealth = 3;
+    //Variable para la velocidad de movimiento
     public float playerSpeed = 5.5f;
+    //Variable para la fuerza del salto
     public float jumpForce = 3f;
 
+    //Variable para almacenar un texto
     string texto = "Hello World";
 
+    //Variable para acceder al SpriteRenderer
     private SpriteRenderer spriteRenderer;
+    //Variable para acceder al RigidBody2D
     private Rigidbody2D rBody;
+    //Variable para acceder al GroundSensor
     private GroundSensor sensor;
+    //Variable para acceder al Animator
     public Animator anim;
 
+    //Variable para almacenar el input de movimiento
     float horizontal;
 
     GameManager gameManager;
-
     SFXManager sfxManager;
 
-
+    //Variable para el prefab
     public GameObject bulletPrefab;
+    //variable para la posicion desde donde se dispara el prefab
     public Transform bulletSpawn;
 
     // Start is called before the first frame update
     void Start()
     {
+        //Asignamos la variables del SpriteRender con el componente que tiene este objeto
         spriteRenderer = GetComponent<SpriteRenderer>();
+        //Asignamos la variable del Rigidbody2D con el componente que tiene este objeto
         rBody = GetComponent<Rigidbody2D>();
+        //Buscamos un Objeto por su nombre, cojemos el Componente GroundSensor de este objeto y lo asignamos a la variable
         sensor = GameObject.Find("GroundSensor").GetComponent<GroundSensor>();
+        //Asignamos la variable del Animator con el componente que tiene este objeto
         anim = GetComponent<Animator>();
+        //Buscamos el objeto del GameManager y lo asignamos a la variable del GameManager
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        SFXManager
 
+        sfxManager = GameObject.Find("SFXManager").GetComponent<SFXManager>();
 
+        //Le damos un valor de 10 a la variable
         playerHealth = 10;
+        //Hacemos un debug con el texto de la variable "texto"
         Debug.Log(texto);
     }
 
@@ -52,11 +67,13 @@ public class PlayerController : MonoBehaviour
 
             if(horizontal < 0)
             {
+                //spriteRenderer.flipX = true;
                 transform.rotation = Quaternion.Euler(0, 180, 0);
                 anim.SetBool("IsRunning", true);
             }
             else if(horizontal > 0)
             {
+                //spriteRenderer.flipX = false;
                 transform.rotation = Quaternion.Euler(0, 0, 0);
                 anim.SetBool("IsRunning", true);
             }
@@ -70,12 +87,13 @@ public class PlayerController : MonoBehaviour
                 rBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 anim.SetBool("IsJumpinng", true);
             }
-            
+
             if(Input.GetKeyDown(KeyCode.F) && gameManager.canShoot)
             {
                 Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
             }
-        }
+        }    
+        
     }
 
     void FixedUpdate()
@@ -85,9 +103,9 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collider.gameObject.tag == "coin")
+        if(collider.gameObject.tag == "Coin")
         {
-            gameManager.Addcoin();
+            gameManager.AddCoin();
             sfxManager.CoinSound();
             Destroy(collider.gameObject);
         }
@@ -95,7 +113,7 @@ public class PlayerController : MonoBehaviour
         if(collider.gameObject.tag == "PowerUp")
         {
             gameManager.canShoot = true;
-            Deestroy(collider.gameObject);
+            Destroy(collider.gameObject);
         }
     }
 }

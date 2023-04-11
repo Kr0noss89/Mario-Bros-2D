@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-
     Rigidbody2D rBody2D;
 
     public float bulletSpeed = 5;
-
 
     // Start is called before the first frame update
     void Start()
@@ -16,18 +14,17 @@ public class Bullet : MonoBehaviour
         rBody2D = GetComponent<Rigidbody2D>();
 
         rBody2D.AddForce(transform.right * bulletSpeed, ForceMode2D.Impulse);
-        
     }
 
     void OnTriggerEnter2D(Collider2D collider)
     {
         if(collider.gameObject.layer == 6)
         {
-            Enemy enemy = collider.gameObject.GetComponent<Enemy>();
-            enemy.Die();
+            Enemy enemyScript = collider.gameObject.GetComponent<Enemy>();
+            enemyScript.Die();
         }
 
-        if(collider.gameObject.tag != "player" || collider.gameObject.tag == "coin")
+        if(collider.gameObject.tag == "Player" || collider.gameObject.tag == "Coin" || collider.gameObject.tag == "Bullet")
         {
             return;
         }
